@@ -31,7 +31,7 @@ class _RandomAppState extends State<RandomApp> {
     Timer.periodic(Duration(seconds: 1), (timer) {
 
       var minValue = 1;
-      var maxValue = 2;
+      var maxValue = 100;
 
       setState(() {
         RandomNumber = minValue + new Random().nextInt(maxValue - minValue);
